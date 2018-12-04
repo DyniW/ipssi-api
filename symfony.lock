@@ -95,6 +95,9 @@
     "escapestudios/symfony2-coding-standard": {
         "version": "3.4.1"
     },
+    "exsyst/swagger": {
+        "version": "v0.4.1"
+    },
     "fig/http-message-util": {
         "version": "1.1.2"
     },
@@ -171,6 +174,15 @@
             "branch": "master",
             "version": "3.2",
             "ref": "5ef2976310e8f9621c1a722a73bfbe115c1559a3"
+        }
+    },
+    "nelmio/api-doc-bundle": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "c8e0c38e1a280ab9e37587a8fa32b251d5bc1c94"
         }
     },
     "nelmio/cors-bundle": {
@@ -661,5 +673,8 @@
     },
     "zendframework/zend-eventmanager": {
         "version": "3.2.1"
+    },
+    "zircote/swagger-php": {
+        "version": "2.0.13"
     }
 }
