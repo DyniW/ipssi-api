@@ -74,7 +74,6 @@ exec:
 
 .PHONY: db ## Update or create the database
 db:
-	$(EXEC) php -r "while(!@fsockopen('db',3306)){}" # Wait for MySQL
 	$(EXEC) $(CONSOLE) doctrine:database:create -q && ${MAKE} db-app-init || exit 0
 
 .PHONY: db-app-init

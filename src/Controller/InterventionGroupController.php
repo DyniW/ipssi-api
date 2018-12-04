@@ -12,6 +12,7 @@ use Doctrine\ORM\EntityRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Serializer\Serializer;
 
 class InterventionGroupController extends AbstractController
 {
@@ -23,7 +24,10 @@ class InterventionGroupController extends AbstractController
     public function list()
     {
         //Dependency
+        /** @var InterventionGroupRepository $InterventionGroupRepository */
         $InterventionGroupRepository = $this->getDoctrine()->getRepository(InterventionGroup::class);
+
+        /** @var Serializer $serailizer */
         $serailizer = $this->get('serializer');
 
         //Logic

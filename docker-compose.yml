@@ -18,7 +18,7 @@ services:
     - .:/srv
 
   db:
-    image: mariadb:10.2.10
+    image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
